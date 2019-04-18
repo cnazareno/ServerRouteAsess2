@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Error Page
+  link(id='pagestyle',href='/css/style.css' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+body#home.no-js
+  include layout/includes/header
+
+ 
+  section#mainContent
+    article#mainArticle
+      h1.error Unexpected Error
+      img.articleImage(src='/images/looking.jpg' alt='Page not found' width='715' height='315')
+      div
+       h1.mr-3.pr-3.align-top.border-right.inline-block.align-content-center=status
+        p Whoops, something went wrong!
+        p
+          | Please try your request again and if it still doesn&apos;t work, contact 
+          a(href='mailto:') support@telecomservices.com
+      
+  

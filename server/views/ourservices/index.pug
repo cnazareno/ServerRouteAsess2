@@ -1,0 +1,28 @@
+extends ../layout/index
+block content
+  section#mainContent2
+    header#contentHeader.hasCrumbs
+      h1 Our Services
+    .card.mb-3
+      img.card-img-top(src='images/services1.jpg' alt='our services')
+      .card-body
+        h5.card-title Our Services
+        p.card-text
+          | We provide telecommunication services for access, transmission, and mobile networks. 
+          | Our services include planning, installation, commissioning, testing and acceptance.
+          | We also provide technical support assistance, maintenance, and managed services.
+        br
+        p.card-text
+          small.text-muted Last updated 3 mins ago
+    .card
+      .card-body
+      each service in ourserviceslist
+        h3.ourserviceslist-title=service.title
+        //h5.card-title Inside Plant
+        h5.ourserviceslist-name.card-title
+        p.ourserviceslist-info.card-text
+      
+        img.ourserviceslist-img.card-img-top(src=`images/${service.shortname}.jpg` alt=`Photo of ${service.shortname}`)
+    
+  //include ../includes/artwork
+  include ../includes/sidebar

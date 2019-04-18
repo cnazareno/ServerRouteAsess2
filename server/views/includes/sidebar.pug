@@ -1,0 +1,16 @@
+if ourwork && ourwork.length
+  aside#secondaryContent
+    #specials.callOut
+      h2 What we can do...
+      .pixgrid.clearfix
+        each thumb, index in ourwork
+          img(src=`/images/${thumb}`, alt=`Ourwork ${index}`)
+
+    #trivia.callOut2
+        h2 Did You Know?
+        p
+          | Through the development of new technologies in the fields of communication,
+          | computation, sensors, electronics and batteries, it is now possible to develop
+          | battery-powered devices with sensors and actuators and computers that are connected
+          | via wide-area communication networks to a cloud-based platform that handles device
+          | data and management.  

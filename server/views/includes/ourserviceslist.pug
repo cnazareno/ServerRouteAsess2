@@ -1,0 +1,19 @@
+article.ourserviceslist.jumbotron.hidden-xs
+  .container
+    .row
+      //30. Loop over the ourservices to populate the yellow header with the ourservices
+      each service in ourserviceslist
+        .col-sm-4.text-center
+          //31. Add in the dynamic title
+          h3.ourserviceslist-title=service.title
+          h5.ourserviceslist-name
+            | with&nbsp;
+            //32. create the dynamic link to the singles service page
+            a(href=`/ourservices/${service.shortname}`)=service.name
+          p.ourserviceslist-info
+            //33. create the dynamic link to the singles service page
+            a(href='/ourservices/Inside_Plant')
+              //34. Dynamic image and alt text
+              img.ourserviceslist-img.img-circle(src=`./images/${service.shortname}.jpg`, alt=`Photo of ${service.shortname}`)
+              //35. Done!
+        //29. Remove everything accept for one service

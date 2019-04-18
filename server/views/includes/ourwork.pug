@@ -1,0 +1,8 @@
+if ourwork && ourwork.length
+  aside#secondaryContent
+      #specials.callOut
+        h2 What we can do...
+        .pixgrid.clearfix
+          each thumb, index in ourwork
+            img(src=`/images/${thumb}`, alt=`Ourwork ${index}`)
+          

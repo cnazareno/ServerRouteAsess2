@@ -1,0 +1,61 @@
+extends layout/index
+block ourserviceslist
+  //include includes/ourserviceslist
+block content
+  section#actionCall
+    h1#demo Towards the new horizon
+    a.btn.btn-primary(onclick="myMessage()") How can we serve you? 
+     
+  #contentWrapper
+  
+    section#mainContent
+      article#mainArticle
+        h1 This Month&apos;s Event
+        p.spotlight
+          | The latest cellular communication technologies enable the introduction of a new generation devices that deliver on the promise of scalable, cost-effective  applications using advance technology.
+          br
+          span.accent
+            a(href='#' title='Technology') Event details
+        h1 Our Services
+        .bd-example
+          #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#carouselExampleCaptions' data-slide-to='0')
+              li(data-target='#carouselExampleCaptions' data-slide-to='1')
+              li(data-target='#carouselExampleCaptions' data-slide-to='2')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src='images/Antenna_mod.jpg' alt='...')
+                .carousel-caption.d-none.d-md-block
+                  h5 First slide label
+                  p Nulla vitae elit libero, a pharetra augue mollis interdum.
+              .carousel-item
+                img.d-block.w-100(src='images/fiber_mod.jpg' alt='...')
+                .carousel-caption.d-none.d-md-block
+                  h5 Second slide label
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .carousel-item
+                img.d-block.w-100(src='images/technology_mod.jpg' alt='...')
+                .carousel-caption.d-none.d-md-block
+                  h5 Third slide label
+                  p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.sr-only Next
+        h1  Podcast
+            video(controls='' poster='images/poster.jpg' width='512' height='288' preload='none')
+              source(src='images/podcast1.mov' type='video/mp4')
+        p.videoText
+            | Join us each month as we publish a new video podcast, 
+            | with featured customer photos, and some exctiing new features!
+        span.accent
+            a(href='/' title='Video Podcast') Watch the full video      
+
+    include includes/sidebar
+ 
+
+  
+

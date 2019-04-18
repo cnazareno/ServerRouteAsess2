@@ -1,0 +1,45 @@
+#wrapper
+  header#mainHeader
+    a.logo(href='/' title='home')
+      div
+        h1 Telecom Services
+
+    nav#siteNav.topnav
+      h1 Where do you want to go?
+      ul
+        li
+          a(href='/' title='Home')
+            | Home 
+            br
+            span.tagline Moving Forward
+        
+        li
+          a.dropdown-toggle(href='/ourservices' title='Services')
+            | Services 
+            br
+            span.tagline What we do
+          ul.dropdown-menu
+            li
+              a(href='/ourservices' title='our services') Our Services
+            li
+            each service in serviceNames
+              a(href=`/ourservices/${service.shortname}`)=service.name
+            
+        li
+          a(href='/feedback' title='Feedback')
+            | Feedback 
+            br
+            span.tagline Send your feedback
+
+        li.custom
+          a.last(onclick="swapStyleSheet('/css/pink.css')")
+            | Customise
+         
+        li.custom
+          a.last( onclick="swapStyleSheet('/css/style.css')")
+            | Back
+          
+          a.icon(href='javascript:void(0);' onclick='myFunction()')
+            i.fa.fa-bars
+            
+          

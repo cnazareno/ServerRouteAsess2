@@ -1,0 +1,20 @@
+{
+  "ourservices": [{
+    "title" : "Inside Plant",
+    "name": "Inside Plant",
+    "shortname" : "Inside_Plant",
+    "summary" : "All the cabling and equipment installed inside a telecommunications facility",
+    "description": "<p>In radio and radar systems, all communications-electronics (C-E) equipment that is installed in buildings.</p>",
+    "ourwork": ["bug2.jpg", "bug4.jpg", "bug8.jpg", "bug9.jpg","bug11.jpg","bug12.jpg"]
+  },{
+    "title" : "Outside Plant",
+    "name": "Outside Plant",
+    "shortname" : "Outside_Plant",
+    "summary": "The facilities that link a telephone company's central office (CO) to the subscriber.",
+    "description": "<p>The outside plant is essentially the local loops and all their associated equipment, which includes the cables, junction boxes, load coils and other structures.</p>",
+    "ourwork" : ["bug1.jpg", "bug3.jpg", "bug5.jpg", "bug6.jpg", "bug7.jpg","bug10.jpg"]
+  }
+    
+]
+
+}
