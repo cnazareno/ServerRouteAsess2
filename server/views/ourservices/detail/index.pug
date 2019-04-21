@@ -2,11 +2,13 @@ extends ../../layout/index
 block content
   section#mainContent2
     header#contentHeader.hasCrumbs
-      h1.ourserviceslist-title=service.title
+      h3.card-title.ourserviceslist-title=service.title
     article#mainArticle
       .multiCol
+     
       p.ourserviceslist-info
         a(href=`/ourservices/${service.shortname}`)  
-        img.ourserviceslist-img.img-responsive.pull-left(src=`/images/${service.shortname}.jpg`, alt=`Photo of ${service.shortname} Post`)
+        img.ourserviceslist-img.card-img-top.pull-left(src=`/images/${service.shortname}.jpg`, alt=`Photo of ${service.shortname} Post`)
+      h5.card-title.ourserviceslist-title=service.title
       !=service.description
   include ../../includes/sidebar
