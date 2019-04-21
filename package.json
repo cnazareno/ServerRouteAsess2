@@ -18,5 +18,13 @@
     "pug": "^2.0.3"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnazareno/ServerRouteAsess2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnazareno/ServerRouteAsess2/issues"
+  },
+  "homepage": "https://github.com/cnazareno/ServerRouteAsess2#readme",
   "description": ""
 }
